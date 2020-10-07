@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+
+<html lang="zh">
+
+<head>
+    <title>幸运抽奖</title>
+    <script type="text/javascript">
+        var randNum = Math.floor(Math.random() * (100 + 1 - 1) + 1);
+        console.log(randNum);
+
+        var a = new Array("www.xinhuanet.com/video/sjxw/2020-09/03/c_1210782446.htm",
+            "fms.news.cn/swf/2020_sjxw/8_14_color/index.html", "fms.news.cn/swf/2020_sjxw/6_1_child/index.html",
+            "fms.news.cn/swf/2020_sjxw/1_19_nw/index.html",
+            "www.xinhuanet.com/video/sjxw/2019-09/12/c_1210277979.htm",
+            "www.xinhuanet.com/video/sjxw/2019-06/26/c_1210170256.htm",
+            "www.xinhuanet.com/video/sjxw/2019-12/06/c_1210385036.htm",
+            "fms.news.cn/swf/2018_sjxw/dgmp_1217_new/index.html",
+            "h5.thepaper.cn/html/zt/2019/12/zzd/index.html",
+            "adproject.thepaper.cn/adproject/2019/8/whnc/index.html",
+            "h5.thepaper.cn/html/zt/2018/07/worldcup/index.html",
+            "hi.iiobox.com/public/201810_lzdjx/",
+            "c.m.163.com/nc/qa/activity/protection2018/index.html?spssid=3e66bbc2639015207a496270633464a4&spsw=3&spss=163",
+            "www.xinhuanet.com/video/sjxw/2019-04/12/c_1210106721.htm",
+            "www.xinhuanet.com/video/sjxw/2020-04/13/c_1210555754.htm",
+            "datanews.caixin.com/interactive/2020/chronic/",
+            "www.xinhuanet.com/video/sjxw/2020-08/01/c_1210731285.htm",
+            "datanews.caixin.com/mobile/interactive/2019/zuowen/",
+            "datanews.caixin.com/interactive/2020/smokefree-digital-map/",
+            "datanews.caixin.com/interactive/2020/chronic/",
+            "datanews.caixin.com/interactive/2020/THREEJS/blossom",
+            "projects.thepaper.cn/thepaper-cases/839studio/divorce/index.html",
+            "7c3dac2e6379.vxplo.cn/idea/7tw_zfQ#p8",
+            "www.xinhuanet.com/video/sjxw/2018-09/07/c_129948936.htm",
+            "www.xinhuanet.com/video/sjxw/2019-08/02/c_1210225888.htm",
+            "www.xinhuanet.com/video/sjxw/2019-04/12/c_1210106721.htm",
+            "projects.thepaper.cn/thepaper-cases/839studio/divorce/index.html",
+            "www.xinhuanet.com/video/sjxw/2019-08/02/c_1210225888.htm",
+            "file.caixin.com/datanews/works_mobile/",
+            "m.thepaper.cn/newsDetail_forward_9324720",
+            "m.thepaper.cn/newsDetail_forward_8867777",
+            "file7c3dac2e6379.aiwall.com/v3/idea/K1FMnREs",
+            "m.thepaper.cn/newsDetail_forward_8389676",
+            "datanews.caixin.com/interactive/2018/Chinese-Glaciers/",
+            "datanews.caixin.com/interactive/2018/Alzheimer/",
+            "file.caixin.com/datanews_mobile/interactive/2018/gaotiezhan/",
+            "datanews.caixin.com/interactive/2018/olympics0808/",
+            "datanews.caixin.com/interactive/2018/antiques/",
+            "file.caixin.com/datanews_mobile/interactive/2018/water_resources/",
+            "file.caixin.com/datanews_mobile/interactive/2018/tb2018/",
+            "datanews.caixin.com/interactive/2018/from-city-to-city/",
+            "www.xinhuanet.com/video/sjxw/2018-09/20/c_1123459232.htm",
+            "www.xinhuanet.com/video/sjxw/2019-02/19/c_1210062862.htm",
+            "www.xinhuanet.com/video/sjxw/2018-09/07/c_129948936.htm",
+            "datanews.caixin.com/interactive/2018/antiques/",
+            "datanews.caixin.com/mobile/AntiCorruption/pc/#/main/general",
+            "file.caixin.com/datanews_mobile/europe/",
+            "datanews.caixin.com/mobile/interactive/2019/brownfield/",
+            "fms.news.cn/swf/2018_sjxw/5_4_2018_we21/index.html",
+            "www.xinhuanet.com/video/sjxw/2018-12/14/c_1210015649.htm",
+            "fms.news.cn/swf/2017_sjxw/jj90_dyjs/index.html",
+            "www.xinhuanet.com/video/sjxw/2020-05/26/c_1210634796.htm",
+            "www.xinhuanet.com/video/sjxw/2018-09/20/c_1123459232.htm",
+            "www.xinhuanet.com/video/sjxw/2019-02/19/c_1210062862.htm",
+            "projects.thepaper.cn/thepaper-cases/839studio/blind/index.html",
+            "www.xinhuanet.com/video/sjxw/2019-10/24/c_1210323069.htm",
+            "www.xinhuanet.com/video/sjxw/2019-06/12/c_1210157176.htm",
+            "www.xinhuanet.com/video/sjxw/2020-08/01/c_1210731285.htm",
+            "www.xinhuanet.com/video/sjxw/2020-07/01/c_1210684559.htm",
+            "datanews.caixin.com/interactive/2018/Chinese-Glaciers/",
+            "www.xinhuanet.com/video/sjxw/2020-05/04/c_1210603161.htm",
+            "datanews.caixin.com/interactive/2018/56ring/",
+            "datanews.caixin.com/mobile/india/",
+            "datanews.caixin.com/mobile/CongoPeatland/",
+            "datanews.caixin.com/mobile/europe/",
+            "file.caixin.com/datanews_mobile/notobacco/",
+            "datanews.caixin.com/2018-10-30/101321216.html",
+            "datanews.caixin.com/2017-02-16/101055873.html",
+            "datanews.caixin.com/mobile/gzhr/index-pc.html",
+            "datanews.caixin.com/2016/ec2015/",
+            "datanews.caixin.com/2014/metro_prices/index.html",
+            "datanews.caixin.com/2015/hungry2015/",
+            "datanews.caixin.com/2015/ggfy/",
+            "datanews.caixin.com/2015/cop21/",
+            "datanews.caixin.com/2015/economic2015q1/index.html",
+            "www.xinhuanet.com/video/sjxw/2020-08/03/c_1210734046.htm",
+            "www.xinhuanet.com/video/sjxw/2020-07/21/c_1210713569.htm",
+            "www.xinhuanet.com/video/sjxw/2020-01/03/c_1210423625.htm",
+            "www.xinhuanet.com/video/sjxw/2020-09/21/c_1210810250.htm",
+            "www.xinhuanet.com/video/sjxw/2020-09/03/c_1210783648.htm",
+            "www.199it.com/archives/917829.html",
+            "data.163.com/20/0531/20/FDVU53I7000181IU.html",
+            "data.163.com/20/0524/22/FDE4H2RD000181IU.html",
+            "data.163.com/20/0412/20/FA1P6R81000181IU.html",
+            "data.163.com/20/0324/20/F8GUC7BS000181IU.html",
+            "page.om.qq.com/page/Ohusxd4RfHxOFidojlmRziMg0",
+            "page.om.qq.com/page/ORdYtJ9q8nNgACBCD1ff64tQ0",
+            "page.om.qq.com/page/OSkEtA3Iix78QnTdTzXgGkug0",
+            "page.om.qq.com/page/OfXB8lOgm6Ziu-TSaP8FCVtg0",
+            "page.om.qq.com/page/OF_ctkrdumvDs9Up_ZFn8pog0",
+            "www.bjnews.com.cn/graphic/2020/01/28/680657.html",
+            "www.bjnews.com.cn/graphic/2019/10/09/634005.html",
+            "www.bjnews.com.cn/graphic/2020/09/21/770958.html",
+            "www.bjnews.com.cn/graphic/2020/09/14/768738.html",
+            "www.bjnews.com.cn/graphic/2020/08/28/763202.html",
+            "www.thepaper.cn/newsDetail_forward_9254534",
+            "www.thepaper.cn/newsDetail_forward_9096385",
+            "www.thepaper.cn/newsDetail_forward_8995193",
+            "www.thepaper.cn/newsDetail_forward_9182325",
+            "www.thepaper.cn/newsDetail_forward_9290825"
+        );
+
+        function testTime() {
+            randNum = Math.floor(Math.random() * (100 + 1 - 1) + 1);
+            document.getElementById("testtime").innerHTML = "<div>" + randNum + "</div>";
+            document.getElementById("htpp").innerHTML = "<a  target=" + "_blank" + " href=" + "\"http://" + a[randNum -
+                1] + "\"" + ">" + a[randNum - 1] + "</a>";
+        }
+
+        function setTime(mark) {
+            timer = null;
+            timer = setInterval(testTime, 60);
+            if (mark == 'stop') {
+                clearInterval(timer);
+            }
+            return timer;
+        }
+
+        function clearTime(timer) {}
+    </script>
+    <style type="text/css">
+        body {
+            font-family: Arial;
+            color: rgb(91, 100, 230);
+            margin: 0px;
+            padding: 50px;
+            background: rgb(245, 201, 209);
+            text-align: center;
+        }
+
+        #happyness {
+            font-size: 180px;
+            line-height: 180px;
+            margin-top: 50px;
+        }
+
+        div {
+            margin-top: 150px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+</body>
+<button onClick="timer=setInterval(testTime,60);" value="" style="width:100px;height:30px">开始</button>&nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp;
+<button onClick="clearInterval(timer);" value="Stop" style="width:100px;height:30px">停止</button>
+<div id="testtime" style="font-size:180px"></div>
+<div id="htpp" style="font-size:24px"></div>
+<br>
+<a href=""></a>
+
+</html>
